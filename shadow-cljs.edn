@@ -1,0 +1,11 @@
+{:source-paths
+ ["src"]
+
+ :dependencies
+ [[reagent "1.1.0"]
+  [tongue/tongue "0.3.0"]]
+
+ :dev-http {8080 "public"}
+ :builds {:stories {:target :npm-module
+                    :ns-regexp "-stories$"
+                    :output-dir "public/js/stories"}}}
